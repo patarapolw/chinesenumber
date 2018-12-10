@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chinesenumber"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert Chinese (or Japanese) numbers to numeric digits (21)"
 authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
 license = "MIT"
