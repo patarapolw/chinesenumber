@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "chinesenumber"
+version = "0.1.0"
+description = "Convert Chinese (or Japanese) numbers (e.g. 二十一) to numeric digits (21)"
+authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/patarapolw/chinesenumber"
+homepage = "https://github.com/patarapolw/chinesenumber"
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.0"
