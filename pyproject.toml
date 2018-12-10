@@ -13,3 +13,4 @@ python = ">=3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.0"
+pytest-readme = "^1.0"

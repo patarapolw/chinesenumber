@@ -23,3 +23,9 @@ class TestNumberParser:
     ])
     def test_numberify(self, in_, out_):
         assert self.parser.numberify(in_) == out_
+
+    @pytest.mark.parametrize('in_, out_', [
+        ('二〇一三', '2013')
+    ])
+    def test_simple_numberify(self, in_, out_):
+        assert self.parser.numberify(in_, simple=True) == out_

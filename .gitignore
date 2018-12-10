@@ -153,3 +153,4 @@ dmypy.json
 # End of https://www.gitignore.io/api/osx,python
 
 .idea/
+test_readme.py

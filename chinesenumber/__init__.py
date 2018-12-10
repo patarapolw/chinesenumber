@@ -67,8 +67,13 @@ class NumberParser:
 
         return self._coerce_int(output)
 
-    def numberify(self, s):
-        return re.sub(r'[%s]+' % (
+    def numberify(self, s, simple=False):
+        if simple:
+            regex = r'[%s]'
+        else:
+            regex = r'[%s]+'
+
+        return re.sub(regex % (
             ''.join(self.pre.keys()) + ''.join(self.mul.keys())
         ), lambda x: str(self.simple_parse(x.group(0))), s)
 
